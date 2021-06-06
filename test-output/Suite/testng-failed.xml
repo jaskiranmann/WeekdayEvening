@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="TC007_LoginTest(failed)" parallel="tests">
+    <classes>
+      <class name="ParallelExecution.TC007_LoginTest">
+        <methods>
+          <include name="pageTitleTest"/>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- ParallelExecution.TC007_LoginTest -->
+    </classes>
+  </test> <!-- TC007_LoginTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke Suite]">
+  <listeners>
+    <listener class-name="Listener.ListenerUtil"/>
+  </listeners>
+  <test thread-count="5" name="TC006_SoftAssertionConcept(failed)">
+    <classes>
+      <class name="SmokeSuite.TC006_SoftAssertionConcept">
+        <methods>
+          <include name="verifyValUsingAssetion"/>
+        </methods>
+      </class> <!-- SmokeSuite.TC006_SoftAssertionConcept -->
+    </classes>
+  </test> <!-- TC006_SoftAssertionConcept(failed) -->
+  <test thread-count="5" name="TC005_HardAssertion(failed)">
+    <classes>
+      <class name="SmokeSuite.TC005_HardAssertion">
+        <methods>
+          <include name="verifyValUsingAssetion"/>
+        </methods>
+      </class> <!-- SmokeSuite.TC005_HardAssertion -->
+    </classes>
+  </test> <!-- TC005_HardAssertion(failed) -->
+</suite> <!-- Failed suite [Smoke Suite] -->
